@@ -1,0 +1,103 @@
+/* src/EditSeminarModal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  min-width: 400px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.modal-header {
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-size: 1.8em;
+  margin: 0;
+  color: #333;
+}
+
+.modal-close {
+  float: right;
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  color: #666;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #ff0000;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.modal-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.modal-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.modal-button:hover {
+  background-color: #2980b9;
+}
+
+.cancel-button {
+  background-color: #e74c3c;
+}
+
+.cancel-button:hover {
+  background-color: #c0392b;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
